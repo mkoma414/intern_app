@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  introduction: MyText
+  want_to_do: MyText
+  history: MyText
+  skill: MyText
+  educational_background: MyText
+  zeminar: MyText
+  circle: MyText
+  language: MyText
+  qualification: MyText
+  awards: MyText
+  writing: MyText
+  portfolio: MyText
+  portfolio_image: MyText
+  link: MyText
+  topic: MyText
+  basic: MyText
+  user: one
+
+two:
+  introduction: MyText
+  want_to_do: MyText
+  history: MyText
+  skill: MyText
+  educational_background: MyText
+  zeminar: MyText
+  circle: MyText
+  language: MyText
+  qualification: MyText
+  awards: MyText
+  writing: MyText
+  portfolio: MyText
+  portfolio_image: MyText
+  link: MyText
+  topic: MyText
+  basic: MyText
+  user: two
