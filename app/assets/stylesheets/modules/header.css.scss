@@ -1,0 +1,134 @@
+
+header{
+  height: 60px;
+  display: flex;
+  font-family: 'Helvetica Neue';
+  line-height: 60px;
+  font-size: 14px;
+  font-weight: 600;
+  .logo{
+    .head-logo{
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+    }
+  }
+
+  .recruit{
+    width: 84px;
+    margin-left: 20px;
+    a{
+      color: $w-blue;
+      text-decoration: none;
+    }
+
+  }
+
+  .feed{
+    width: 114px;
+    margin-left: 14px;
+    a{
+      color: $header-font-color;
+      text-decoration: none;
+    }
+    a:hover{
+      color: $w-blue;
+    }
+  }
+
+  .profile{
+    width: 100px;
+    margin-left: 14px;
+    a{
+      color: $header-font-color;
+      text-decoration: none;
+    }
+    a:hover{
+      color: $w-blue;
+    }
+  }
+
+  .tool{
+    width: 58px;
+    margin-left: 14px;
+    a{
+      color: $header-font-color;
+      text-decoration: none;
+    }
+    a:hover{
+      color: $w-blue;
+    }
+  }
+
+  .search{
+    width: 360px;
+    margin-left: 14px;
+    a{
+      color: $header-font-color;
+      text-decoration: none;
+    }
+    a:hover{
+      color: $w-blue;
+    }
+  }
+
+  .icons{
+    width: 84px;
+  }
+
+  .header-search{
+    widht: 360px;
+    height: 100%;
+    position: relative;
+  }
+  .header-search-form{
+    width: 360px;
+    height: 36px;
+    font-size: 14px;
+    border: 1px solid #f5f5f5;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #9DA0A4;
+    padding: 0 35px 0 10px;
+    line-height: 16px;
+    box-sizing: border-box;
+  }
+
+  .search-icon{
+    position: absolute;
+    top: 24px;
+    right: 17px;
+    width: 16px;
+    height: 16px;
+  }
+  .icons{
+    width: calc( 100vw - 852px);
+    display: flex;
+    justify-content: flex-end;
+    // background-color: black;
+
+    .icon{
+      width: 30px;
+      height: 100%;
+      margin-right: 12px;
+
+      img{
+        width: 25px;
+        height: 25px;
+        margin-top: 18px;
+      }
+    }
+    .user-icon{
+      // width: 40px;
+      height: 100%;
+
+      .user-icon-pic{
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        margin-right: 10px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

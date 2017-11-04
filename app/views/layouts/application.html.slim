@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    title
+      | InternApp
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    header
+      .logo
+        = link_to root_path do
+          = image_tag 'logo.svg', class: 'head-logo'
+      .recruit
+        =link_to '募集を見る'
+      .feed
+        =link_to 'フィードをみる'
+      .profile
+        =link_to 'プロフィール'
+      .tool
+        =link_to 'ツール'
+      .search
+        = form_tag(root_path, class: 'header-search') do
+          = text_field_tag :search, '', class: 'header-search-form', placeholder: '人や会社、募集を検索'
+          = image_tag 'search.png', class: 'search-icon'
+      .icons
+        .icon
+          = image_tag('icon_talk.png')
+        .icon
+          = image_tag('icon_person.png')
+        .icon
+          = image_tag('icon_bell.png')
+        .user-icon
+          = image_tag('user-icon.jpg', class: 'user-icon-pic')
+    = yield
