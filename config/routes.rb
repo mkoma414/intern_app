@@ -13,6 +13,10 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
 
-  resources :projects
+  resources :projects do
+    collection do
+      get :get_head_data
+    end
+  end
 
 end

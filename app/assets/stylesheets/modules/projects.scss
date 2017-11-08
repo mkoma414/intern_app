@@ -1,3 +1,40 @@
-// Place all the styles related to the projects controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.top{
+
+  overflow: scroll;
+
+  &__contents {
+    width: 4510px;
+    height: 100%;
+    // overflow: scroll;
+    display: flex;
+
+    &__head-project {
+      width: 640px;
+      height: 100%;
+      margin-right: 5px;
+      position: relative;
+
+      img {
+        width: 640px;
+        height: 260px;
+      }
+      &-recruitment_style {
+        position: absolute;
+        display: inline-block;
+        top: 275px;
+        left: 16px;
+        color: $w-blue;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      &-title {
+        display: inline-block;
+        position: absolute;
+        width: 600px;
+        font-size: 20px;
+        top: 300px;
+        left: 14px;
+      }
+    }
+  }
+}
