@@ -5,4 +5,6 @@ class Company < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :projects
+
+  mount_uploader :image, ImageUploader
 end

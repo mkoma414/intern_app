@@ -1,9 +1,20 @@
 .top
+  #arrows
+    .slick-next
+      =image_tag 'right-arrow.png'
+    .slick-prev
+      =image_tag 'left-arrow.png'
   .top__contents
     #project1.top__contents__head-project
     #project2.top__contents__head-project
     #project3.top__contents__head-project
     #project4.top__contents__head-project
     #project5.top__contents__head-project
-    #project6.top__contents__head-project
-    #project7.top__contents__head-project
+.dots
+  =image_tag 'dots.png', class: 'dots-image'
+.main
+  .main__left
+  .main__right
+    .main__right__head
+    .main__right__index
+      =render @projects

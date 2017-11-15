@@ -1,20 +1,27 @@
 = form_for @project do |f|
   = f.label :title
   = f.text_field :title
+  br
 
   = f.label :content
   = f.text_field :content
+  br
 
   = f.label :finding_person
   = f.text_field :finding_person
+  br
 
   = f.label :recruitment_style
   = f.text_field :recruitment_style
+  br
 
   = f.label :recruiting_feature
   = f.text_field :recruiting_feature
+  br
 
   = f.label :image
   = f.file_field :image
+  br
 
   = f.submit
+  br

@@ -1,40 +1,162 @@
+html{
+      font-family: 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', "ヒラギノ角ゴシック", 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3',Roboto, 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック'
+}
+
 .top{
 
-  overflow: scroll;
+  // overflow: scroll;
+  height: 440px;
+  overflow: hidden;
+  position: relative;
 
   &__contents {
-    width: 4510px;
-    height: 100%;
-    // overflow: scroll;
-    display: flex;
+    // width: 4510px;
+    // width: 4522px;
+    // height: 100%;
+    width: 100%;
+    // display: flex;
+    // position: relative;
+    background-color: #f5f5f5;
 
     &__head-project {
-      width: 640px;
-      height: 100%;
-      margin-right: 5px;
+      // width: 640px !important;
+      // height: 430px !important;
+      // margin-right: 10px;
+      background-color: #fff;
+      // top: 1px;
       position: relative;
+      // padding: 0 10px;
+
+      &:focus{
+        outline: none;
+      }
 
       img {
         width: 640px;
         height: 260px;
       }
       &-recruitment_style {
-        position: absolute;
-        display: inline-block;
-        top: 275px;
-        left: 16px;
         color: $w-blue;
         font-size: 12px;
         font-weight: 600;
+        z-index: 10;
+        margin-top: 16px;
+        margin-left: 18px;
       }
       &-title {
-        display: inline-block;
-        position: absolute;
+        // display: inline-block;
+        // position: absolute;
         width: 600px;
         font-size: 20px;
-        top: 300px;
-        left: 14px;
+        font-weight: 600;
+        color: #24282A;
+        line-height: 1.4;
+        z-index: 10;
+        margin-top: 10px;
+        margin-left: 18px;
       }
     }
   }
 }
+
+.slick-prev:before, .slick-next:before {
+    content:"";
+}
+button.slick-prev, button.slick-next {
+    z-index:30;
+
+    &:hover{
+      // opacity: 1.0;
+    }
+
+}
+.slick-prev{
+  left: 0;
+  width: 57px;
+  height: 78px;
+  z-index: 20;
+  opacity: 0.6;
+
+  img{
+    width: 57px;
+    height: 78px;
+  }
+}
+.slick-next{
+  right: 0;
+  width: 57px;
+  height: 78px;
+  z-index: 20;
+  opacity: 0.6;
+
+  img{
+    width: 57px;
+    height: 78px;
+  }
+}
+
+.slick-arrow{
+  z-index:100;
+}
+
+.dots{
+  height: 50px;
+
+  .dots-image{
+    width: 200px;
+    margin: 5px 530px;
+  }
+}
+
+.main{
+  height: 1500px;
+  padding: 0 180px;
+  display: flex;
+
+  &__left{
+    width: 250px;
+    background-color: #eee;
+    margin-right: 50px;
+  }
+
+  &__right{
+    width: 560px;
+
+    &__head{
+      height: 40px;
+    }
+
+    &__index{
+
+      .project-image{
+        width: 100%;
+      }
+
+      .recruitment-style{
+        color: $w-blue;
+      }
+
+      .title{
+
+      }
+
+      .content{
+        height: 100px;
+        overflow: hidden;
+
+      }
+
+      .company-icon{
+        width: 50px;
+        height: 50px;
+      }
+
+      .company-name{
+
+      }
+
+    }
+  }
+}
+
+

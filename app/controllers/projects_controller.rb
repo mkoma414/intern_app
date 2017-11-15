@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
   def index
+    @projects = Project.where('id > 5')
   end
 
   def show
