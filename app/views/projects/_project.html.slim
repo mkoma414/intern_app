@@ -6,7 +6,14 @@
   = project.title
 .content
   = project.content
-.company-icon
-  = image_tag project.company.image, class: 'company-icon'
-.company-name
-  = project.company.name
+.foot
+  .company-icon
+    = image_tag project.company.image, class: 'icon'
+  .company-name
+    = project.company.name
+  .date
+    '24日前
+  .like
+    '206
+  .read-later
+    '□
