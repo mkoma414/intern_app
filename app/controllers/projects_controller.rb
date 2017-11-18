@@ -28,10 +28,10 @@ class ProjectsController < ApplicationController
 
   def get_head_data
 
-    @head_data = Project.all
+    @head_data = Project.where('id < 6')
 
     respond_to do |format|
-      format.json { render json: @head_data}
+      format.json
     end
   end
 

@@ -6,6 +6,7 @@ $(function(){
     type: "GET",
     dataType: 'json',
     }).done(function(data){
+      console.log(data);
       init_set_head_data(data);
       $('.top__contents').slick({
         infinite: true,
@@ -13,12 +14,11 @@ $(function(){
         centerPadding: '300px',
         slidesToShow: 1,
         variableWidth: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 3500,
         dots: true,
-        appendArrows: $('#arrows')
-        // prevArrow: '<a class="slick-prev" href="#"><img src="/assets/nav-left.png></a>',
-        // nextArrow: '<a class="slick-next" href="#"><img src="/assets/nav-right.png></a>'
+        appendArrows: $('#arrows'),
+        appendDots: $('.my-dots')
       });
     }).fail(function(){
     })
@@ -33,9 +33,12 @@ $(function(){
   }
 
   function buildHeadHTML(data){
-    html = `<img src="${data.image.url}",class="top__contents__head-project-image">
+    html = `<img src="${data.image.url}" class="top__contents__head-project-image">
             <div class="top__contents__head-project-recruitment_style">${data.recruitment_style}</div>
             <div class="top__contents__head-project-title">${data.title}</div>
+            <img src="${data.company_icon.url}" class="top__contents__head-project-company-icon">
+            <div class="top__contents__head-project-company-name">${data.company_name}</div>
+            <img src="assets/like.png" class="top__contents__head-project-like">
            `
     return html;
   }
@@ -48,14 +51,9 @@ $(function(){
   };
 
   get_head_data();
+  $(document).on('click','.dot',  function(){
+    console.log('dot!');
+    $('.top__contents').slick('slickGoTo', 3);
+  })
 
 })
-
-
-
-
-
-
-
-
-
