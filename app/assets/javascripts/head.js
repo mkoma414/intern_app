@@ -14,7 +14,7 @@ $(function(){
         centerPadding: '300px',
         slidesToShow: 1,
         variableWidth: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 3500,
         dots: true,
         appendArrows: $('#arrows'),
