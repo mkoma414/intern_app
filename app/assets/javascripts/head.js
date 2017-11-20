@@ -51,9 +51,15 @@ $(function(){
   };
 
   get_head_data();
+
   $(document).on('click','.dot',  function(){
     console.log('dot!');
     $('.top__contents').slick('slickGoTo', 3);
   })
+
+  $('.top__contents').on('init', function(slick){
+    $('.loading-image').remove();
+    console.log('スライダーが初期化された時のイベント');
+  });
 
 })

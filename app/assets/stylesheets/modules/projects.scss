@@ -9,6 +9,21 @@ html{
   overflow: hidden;
   position: relative;
 
+  #loading-image{
+    position: absolute;
+    top: 160px;
+    left: calc(50vw - 25px);
+    z-index: 100;
+    // animation: spin 1.5s linear infinite;
+    animation: spin 1s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+  	100% {transform: rotate(360deg);}
+  	// 80% {transform: rotate(360deg);}
+    // 20% {transform: rotate(360deg);}
+  }
+
   &__contents {
     // width: 4510px;
     // width: 4522px;
@@ -105,7 +120,6 @@ button.slick-prev, button.slick-next {
   width: 57px;
   height: 78px;
   z-index: 20;
-  opacity: 0.6;
 
   img{
     width: 57px;
@@ -117,7 +131,6 @@ button.slick-prev, button.slick-next {
   width: 57px;
   height: 78px;
   z-index: 20;
-  opacity: 0.6;
 
   img{
     width: 57px;
@@ -127,6 +140,9 @@ button.slick-prev, button.slick-next {
 
 .slick-arrow{
   z-index:100;
+  &:hover{
+    opacity: 1.0;
+  }
 }
 
 .my-dots{
